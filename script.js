@@ -7,15 +7,15 @@ let Particle = function (position) {
 
   this.draw = function() {
     circle(this.position.x, this.position.y, this.diameter);
-    FileList(this.color);
+    fill(this.color);
   }
 
   this.update = function(energy) {
-    this.diameter = random(5,7) + energy * 100;
     this.position.y += this.speed.y * energy * 10;
     if (this.position.y > height) {
       this.position.y = 0;
     }
+    this.diameter = random(5,7) + energy * 100;
   }
 }
 
