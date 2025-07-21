@@ -21,7 +21,6 @@ let Particle = function (position) {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background("black");
   noStroke();
 
   //set up microphone input
@@ -37,6 +36,7 @@ function setup() {
 }
 
 function draw() {
+  backgroun(0,0,0);
   let spectrum = fft.analyze();
   updateParticles(spectrum);
 }
