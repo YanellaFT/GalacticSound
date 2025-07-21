@@ -36,7 +36,7 @@ function setup() {
 }
 
 function draw() {
-  backgroun(0,0,0);
+  background(0,0,0);
   let spectrum = fft.analyze();
   updateParticles(spectrum);
 }
