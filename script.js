@@ -3,7 +3,7 @@ let fft;
 let Particle = function (position) {
   this.position = position;
   this.speed = createVector(0,1);
-  this.color = (random(0,255), random(0,255), random(0,255));
+  this.color = [random(0,255), random(0,255), random(0,255)];
 
   this.draw = function() {
     circle(this.position.x, this.position.y, this.diameter);
